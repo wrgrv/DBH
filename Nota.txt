@@ -1,0 +1,8 @@
+got clone https://github.com/tensorflow/models.git
+
+pip install --ignore-installed --upgrade tensorflow-gpu
+
+python setup.py build
+python setup.py install
+
+protoc --python_out=. object_detection/protos/*.proto
